@@ -1,0 +1,90 @@
+.Table,
+table {
+	width: 100%;
+	overflow-x: scroll;
+}
+
+table {
+	border-spacing: 0;
+	width: 100%;
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: left;
+	padding: 14px 16px;
+}
+
+tr {
+	cursor: pointer;
+}
+
+tbody tr:hover > td {
+	background: #f8f8f8;
+}
+
+tbody .tr-no-hover-bg tr:hover > td {
+	background: none;
+}
+
+tbody tr:first-child > td:first-child {
+	border-top-left-radius: 8px;
+}
+tbody tr:first-child > td:last-child {
+	border-top-right-radius: 8px;
+}
+tbody tr:last-child > td:first-child {
+	border-bottom-left-radius: 8px;
+}
+tbody tr:last-child > td:last-child {
+	border-bottom-right-radius: 8px;
+}
+
+th:last-child,
+td:last-child {
+	text-align: right;
+	padding-right: 32px;
+}
+
+th:first-child,
+td:first-child {
+	padding-left: 32px;
+	text-align: left;
+}
+
+tr:last-child > td {
+	border-bottom: none;
+}
+
+th {
+	color: #5b616e;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.table-is-input-table {
+	border: 1px solid #dedfd2;
+	border-radius: 8px;
+	margin-bottom: 24px;
+}
+
+.table-is-input-table > tbody > tr {
+	height: 65px;
+	cursor: pointer;
+}
+
+.table-has-border-bottom th,
+td {
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.table-has-small-padding th:last-child,
+.table-has-small-padding td:last-child {
+	padding-right: 16px;
+}
+
+.table-has-small-padding th:first-child,
+.table-has-small-padding td:first-child {
+	padding-left: 16px;
+}

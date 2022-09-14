@@ -1,0 +1,10 @@
+.tableRowSelectAsset__cellVerticalAligned {
+  display: flex;
+  align-items: center;
+}
+
+.tableRowSelectAsset__iconAsset {
+  margin: 3px 16px 0 0;
+  width: 24px;
+  color: #2151f5;
+}

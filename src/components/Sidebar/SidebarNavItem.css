@@ -1,0 +1,53 @@
+.SidebarNavItem {
+	display: grid;
+	align-content: center;
+	grid-template-columns: 30px auto;
+	height: 48px;
+	padding-left: 8px;
+	margin-bottom: 24px;
+	border-radius: 8px;
+}
+
+.SidebarNavItem:hover {
+	background-color: #eef0f3;
+}
+
+.SidebarNavItem:hover svg,
+.sidebarNavItem-active svg {
+	color: #2151f5;
+}
+
+.sidebarNavItem__circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #eef0f3;
+}
+
+.sidebarNavItem__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 16px;
+	width: 16px;
+}
+
+.sidebarNavItem__text {
+	display: flex;
+	align-items: center;
+	margin-left: 16px;
+	font-weight: 600;
+}
+
+@media (max-width: 1300px) {
+	.SidebarNavItem {
+		padding-right: 8px;
+	}
+
+	.Sidebar .sidebarNavItem__text {
+		display: none;
+	}
+}

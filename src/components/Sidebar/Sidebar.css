@@ -1,0 +1,16 @@
+.Sidebar {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	width: 236px;
+	border-right: 1px solid #dedfd2;
+}
+
+.sidebar__nav {
+	margin: 16px 8px;
+}
+
+@media (max-width: 1300px) {
+	.Sidebar {
+		width: auto;
+	}
+}

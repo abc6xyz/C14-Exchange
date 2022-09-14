@@ -1,0 +1,25 @@
+.TableCellCoinName {
+  display: grid;
+  grid-template-columns: fit-content(30px) 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 12px;
+  grid-template-areas:
+    'icon name'
+    'icon symbol';
+}
+
+.tableCellCoinName__icon {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+  grid-area: icon;
+}
+
+.tableCellCoinName__name {
+  grid-area: name;
+}
+.tableCellCoinName__symbol {
+  grid-area: symbol;
+}

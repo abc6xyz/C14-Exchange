@@ -1,0 +1,20 @@
+.tabContentBuyEmpty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.tabContentBuyEmpty__icon {
+	color: #f3b74f;
+	font-size: 90px;
+	margin-top: 32px;
+}
+
+.tabContentBuyEmpty__heading {
+	margin: 16px 0;
+}
+
+.tabContentBuyEmpty__content {
+	margin-bottom: 48px;
+}
