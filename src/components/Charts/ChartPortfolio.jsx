@@ -24,7 +24,7 @@ const ChartPortfolio = ({ assets }) => {
       <div className='chartPortfolio__header'>
         <div className='chartPortfolio__headerRow1'>
           <Text color='grey' weight='600'>
-            Portfolio balance
+            Carbon Portfolio
           </Text>
           <div className='timeFrameBtn__wrapper'>
             {isWidthMax600 && (
