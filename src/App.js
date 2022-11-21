@@ -13,7 +13,7 @@ import { Dashboard } from './components';
 import { UserProvider } from './contexts/UserContext';
 
 function App() {
-    ReactGA.initialize('UA-248604801-1');
+    ReactGA.initialize('UA-249991444-1');
     ReactGA.pageview('Init page view');
   return (
     <div className='App'>
