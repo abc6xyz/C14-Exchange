@@ -15,6 +15,10 @@ import { UserProvider } from './contexts/UserContext';
 function App() {
     ReactGA.initialize('UA-249991444-1');
     ReactGA.pageview('Init page view');
+    ReactGA.event({
+  category: 'User',
+  action: 'Joined the waitlist'
+});
   return (
     <div className='App'>
       <UserProvider>
