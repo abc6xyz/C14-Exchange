@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import './SignUpForm.css';
 
 import { Button, Input, Text } from '../index';
