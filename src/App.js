@@ -8,11 +8,18 @@ import {
   Trade,
 } from './pages';
 import { Navigate, Route, Routes } from 'react-router-dom';
-
+import ReactGA from 'react-ga';
 import { Dashboard } from './components';
 import { UserProvider } from './contexts/UserContext';
 
 function App() {
+  setGA = () => {
+    ReactGA.initialize('UA-248604801-1');
+    ReactGA.pageview('Init page view');
+  };
+  componentDidMount(){
+    this.setGA();
+  }
   return (
     <div className='App'>
       <UserProvider>
