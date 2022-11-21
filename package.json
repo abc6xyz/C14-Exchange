@@ -1,5 +1,5 @@
 {
-  "name": "coinbase-clone",
+  "name": "C14-Exchange",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,10 @@
     "dayjs": "^1.11.0",
     "dotenv": "^16.0.2",
     "firebase": "^9.6.8",
+    "fs": "^0.0.1-security",
     "normalize.css": "^8.0.1",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-chartjs-2": "^4.0.1",
     "react-dom": "^17.0.2",

@@ -36,9 +36,12 @@ const Trade = () => {
     filterResult,
     'symbol'
   );
-
-  const assetsInTable =
-    searchInput || filterInput !== 'All assets' ? searchFilterResult : allCoins;
+  
+  const abcd = allCoins[0];
+  abcd.name = 'C14 Token';
+  abcd.symbol = 'C14';
+  abcd.icon = 'https://imgur.com/Cz7cT2x.png';
+  const assetsInTable = searchInput || filterInput !== 'All assets' ? searchFilterResult : allCoins;
 
   const watchlistQuery = (asset) => asset.onWatchlist;
 
