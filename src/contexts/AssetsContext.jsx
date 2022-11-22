@@ -5,7 +5,6 @@ const AssetsContext = createContext();
 
 const AssetsProvider = ({ children }) => {
   const { allCoins, yourCoins, coinsOnWatchlist, allFiat } = useAssets();
-
   return (
     <AssetsContext.Provider
       value={{ allCoins, yourCoins, coinsOnWatchlist, allFiat }}>

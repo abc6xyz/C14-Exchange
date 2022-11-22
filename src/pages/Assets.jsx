@@ -16,7 +16,12 @@ import useMediaQuery from '../hooks/useMediaQuery';
 const Assets = () => {
   const isWidthMin1150 = useMediaQuery('(min-width: 1150px)');
   const { yourCoins, coinsOnWatchlist } = useContext(AssetsContext);
-
+  // console.log(yourCoins[0].id);
+  // if (yourCoins[0].id === "Qwsogvtv82FCd") {
+  //   yourCoins[0].name = 'C14 Token';
+  //   yourCoins[0].symbol = 'C14';
+  //   yourCoins[0].icon = 'https://imgur.com/Cz7cT2x.png';
+  // }
   return (
     <>
       <ContentCenter>

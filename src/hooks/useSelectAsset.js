@@ -7,7 +7,9 @@ const useSelectAsset = () => {
   const [isSelectAssetOpen, setIsSelectAssetOpen] = useState(false);
   const [lastSelectAssetType, setLastSelectAssetType] = useState('coin');
   const [selectedFiat, setSelectedFiat] = useState(allFiat[0]);
+  console.log(allFiat);
   const [selectedCoin, setSelectedCoin] = useState(allCoins[0]);
+  console.log(allCoins);
   const [selectedCoinConvertTo, setSelectedCoinConvertTo] = useState(
     allCoins[1]
   );
