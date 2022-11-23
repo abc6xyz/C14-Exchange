@@ -13,7 +13,7 @@ const TableYourAssets = ({ assets }) => {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Ballance</th>
+            <th>Balance</th>
             <th>Price</th>
             <th>Allocation</th>
           </tr>

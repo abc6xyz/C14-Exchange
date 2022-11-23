@@ -19,6 +19,17 @@ const Sidebar = () => {
           text='Deposit'
           icon={<AiFillEuroCircle />}
         />
+        <SidebarNavItem
+                to='/partners'
+                text='Partners'
+                icon={<AiFillEuroCircle />}
+              />
+        <SidebarNavItem
+                to='/rating'
+                text='Get Offsets'
+                icon={<AiFillEuroCircle />}
+              />
+              
       </div>
     </nav>
   );

@@ -34,6 +34,17 @@ const MenuMobile = () => {
                 text='Deposit'
                 icon={<AiFillEuroCircle />}
               />
+              <SidebarNavItem
+                to='/partners'
+                text='Partners'
+                icon={<AiFillEuroCircle />}
+              />
+              <SidebarNavItem
+                to='/rating'
+                text='Get Offsets'
+                icon={<AiFillEuroCircle />}
+              />
+              
             </div>
             <Button color='secondary' onClick={signout} size='xl'>
               Log out

@@ -18,6 +18,11 @@ const useAssets = () => {
     yourCoins[0].name = 'C14 Token';
     yourCoins[0].symbol = 'C14';
     yourCoins[0].icon = 'https://imgur.com/Cz7cT2x.png';
+    yourCoins[0].price_eur = 10.34;
+    yourCoins[1].name = 'C14_Water Token';
+    yourCoins[1].symbol = 'C14W';
+    yourCoins[1].icon = 'https://imgur.com/Cz7cT2x.png';
+    
     }    
   }
   const coinsOnWatchlist = coins

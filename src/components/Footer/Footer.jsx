@@ -41,6 +41,26 @@ const Footer = () => {
           </Button>
         </>
       )}
+      {page === 'Partners' && (
+        <>
+          <Button onClick={() => handleOpen('deposit')} stretch>
+            Add cash
+          </Button>
+          <Button onClick={() => handleOpen('deposit', 2)} stretch>
+            Cashout
+          </Button>
+        </>
+      )}
+      {page === 'Get Offsets' && (
+        <>
+          <Button onClick={() => handleOpen('deposit')} stretch>
+            Add cash
+          </Button>
+          <Button onClick={() => handleOpen('deposit', 2)} stretch>
+            Cashout
+          </Button>
+        </>
+      )}
     </div>
   );
 };

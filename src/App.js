@@ -2,6 +2,8 @@ import {
   Assets,
   Deposit,
   Pay,
+  Rating,
+  Partner,
   ProtectedPages,
   SignIn,
   SignUp,
@@ -32,6 +34,9 @@ function App() {
               <Route path='trade' element={<Trade />} />
               <Route path='pay' element={<Pay />} />
               <Route path='deposit' element={<Deposit />} />
+              <Route path='rating' element={<Rating />} />
+              <Route path='partners' element={<Partner />} />
+              
               <Route path='*' element={<Assets />} />
             </Route>
           </Route>
