@@ -2,7 +2,7 @@ import './Sidebar.css';
 
 import { Logo, SidebarNavItem } from '..';
 import { RiBankCardFill, RiPieChartFill } from 'react-icons/ri';
-
+import {GiGreenPower} from 'react-icons/gi';
 import { AiFillEuroCircle } from 'react-icons/ai';
 import { TiChartLine } from 'react-icons/ti';
 
@@ -19,15 +19,15 @@ const Sidebar = () => {
           text='Deposit'
           icon={<AiFillEuroCircle />}
         />
-        <SidebarNavItem
+        {/* <SidebarNavItem
                 to='/partners'
                 text='Partners'
                 icon={<AiFillEuroCircle />}
-              />
+              /> */}
         <SidebarNavItem
                 to='/rating'
-                text='Get Offsets'
-                icon={<AiFillEuroCircle />}
+                text='Convert C14 to Offset'
+                icon={<GiGreenPower />}
               />
               
       </div>

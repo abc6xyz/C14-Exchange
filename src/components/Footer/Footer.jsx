@@ -51,7 +51,7 @@ const Footer = () => {
           </Button>
         </>
       )}
-      {page === 'Get Offsets' && (
+      {page === 'Convert to Offsets' && (
         <>
           <Button onClick={() => handleOpen('deposit')} stretch>
             Add cash

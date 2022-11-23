@@ -4,6 +4,7 @@ import { Button, SidebarNavItem } from '..';
 import { RiBankCardFill, RiCloseLine, RiPieChartFill } from 'react-icons/ri';
 
 import { AiFillEuroCircle } from 'react-icons/ai';
+import {GiGreenPower} from 'react-icons/gi';
 import { ModalContext } from '../../contexts/ModalContext';
 import { TiChartLine } from 'react-icons/ti';
 import useAuth from '../../hooks/useAuth';
@@ -34,15 +35,15 @@ const MenuMobile = () => {
                 text='Deposit'
                 icon={<AiFillEuroCircle />}
               />
-              <SidebarNavItem
+              {/* <SidebarNavItem
                 to='/partners'
                 text='Partners'
                 icon={<AiFillEuroCircle />}
-              />
+              /> */}
               <SidebarNavItem
                 to='/rating'
-                text='Get Offsets'
-                icon={<AiFillEuroCircle />}
+                text='Convert C14 to Offsets'
+                icon={<GiGreenPower />}
               />
               
             </div>
