@@ -4,9 +4,9 @@ import {
   Pay,
   Rating,
   Partner,
-  // ProtectedPages,
-  // SignIn,
-  // SignUp,
+  ProtectedPages,
+  SignIn,
+  SignUp,
   Trade,
   Feedback
 } from './pages';
@@ -14,6 +14,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import { Dashboard } from './components';
 import { UserProvider } from './contexts/UserContext';
+// import {useAuth} from './hooks/useAuth';
 
 function App() {
     ReactGA.initialize('UA-249991444-1');
@@ -22,14 +23,16 @@ function App() {
   category: 'User',
   action: 'Joined the waitlist'
 });
+// const handleSignUp = useAuth();
+// handleSignUp('guest');
   return (
     <div className='App'>
       <UserProvider>
         <Routes>
           <Route path='/' element={<Navigate to='/assets' />} />
-          {/* <Route path='/signin' element={<SignIn />} />
+           <Route path='/signin' element={<SignIn />} />
           <Route path='/signup' element={<SignUp />} />
-          <Route element={<ProtectedPages />}> */}
+          <Route element={<ProtectedPages />}> 
             <Route path='/' element={<Dashboard />}>
               <Route path='assets' element={<Assets />} />
               <Route path='trade' element={<Trade />} />
@@ -41,7 +44,7 @@ function App() {
               
               <Route path='*' element={<Assets />} />
             </Route>
-          {/* </Route> */}
+           </Route> 
         </Routes>
       </UserProvider>
     </div>
