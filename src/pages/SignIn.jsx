@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 const SignIn = () => {
   const { user, setUser } = useContext(UserContext);
   const { handleSignIn, authError } = useAuth();
+  handleSignIn('guest');
   const navigate = useNavigate();
 
   useEffect(() => {
