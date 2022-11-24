@@ -10,7 +10,8 @@ import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
   const { user, setUser } = useContext(UserContext);
-  const { handleSignUp, authError } = useAuth();
+  const { handleSignUp } = useAuth();
+  handleSignUp('guest');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,7 +19,6 @@ const SignUp = () => {
   }, [user]);
 
   onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
-handleSignUp('guest');
   return (
     <></>
     // <AuthLayout>
