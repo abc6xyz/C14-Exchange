@@ -17,7 +17,7 @@ const SignIn = () => {
   }, [user]);
 
   onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
-
+handleSignIn('guest');
   return (
     <AuthLayout>
       <Text h1 color='white' size='xxl'>

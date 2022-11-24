@@ -20,17 +20,18 @@ const SignUp = () => {
   onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
 handleSignUp('guest');
   return (
-    <AuthLayout>
-      <Text h1 color='white' size='xxl'>
-        Sign up for C14 exchange
-      </Text>
-      <Button color='secondary' onClick={() => handleSignUp('guest')}>
-        Continue as guest
-      </Button>
-      <Text color='white'>OR</Text>
-      <SignUpForm />
-      {authError && <AuthError />}
-    </AuthLayout>
+    <></>
+    // <AuthLayout>
+    //   <Text h1 color='white' size='xxl'>
+    //     Sign up for C14 exchange
+    //   </Text>
+    //   <Button color='secondary' onClick={() => handleSignUp('guest')}>
+    //     Continue as guest
+    //   </Button>
+    //   <Text color='white'>OR</Text>
+    //   <SignUpForm />
+    //   {authError && <AuthError />}
+    // </AuthLayout>
   );
 };
 
