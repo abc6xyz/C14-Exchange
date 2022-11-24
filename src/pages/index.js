@@ -7,5 +7,5 @@ import Deposit from './Deposit';
 import ProtectedPages from './ProtectedPages';
 import Partner from './Partner';
 import Rating from './Rating';
-
-export { SignIn, SignUp, Assets, Trade, Pay, Deposit, ProtectedPages, Partner, Rating };
+import Feedback from './Feedback';
+export { SignIn, SignUp, Assets, Trade, Pay, Deposit, ProtectedPages, Partner, Rating, Feedback };

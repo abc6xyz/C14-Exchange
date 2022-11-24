@@ -21,6 +21,8 @@ function App() {
   category: 'User',
   action: 'Joined the waitlist'
 });
+console.log("Oyee aagayaaa!");
+
   return (
     <div className='App'>
       <UserProvider>

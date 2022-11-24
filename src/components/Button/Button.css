@@ -1,19 +1,20 @@
 .Button {
 	padding: 5px;
-	border: 1px solid #2151f5;
+	border: 1px solid #4F7942;
 	padding: 11px 16px;
 	border-radius: 4px;
 	font-size: 15px;
 	font-weight: 600;
-	background-color: #2151f5;
+	background-color: #4F7942;
 	color: white;
 	cursor: pointer;
 }
 
 .Button:hover {
-	background-color: #1d48d6;
+	background-color: #426636;
 }
-
+/*426636
+1d48d6*/
 .btn-secondary {
 	background-color: white;
 	color: black;
@@ -58,11 +59,12 @@
 }
 
 .btn-light.btn-primary {
-	color: #2151f5;
+	color: #4F7942;
 }
-
+/*4F7942
+2151f5*/
 .btn-light.btn-primary:hover {
-	color: #1d48d6;
+	color: #426636;
 	background-color: white;
 }
 

@@ -1,5 +1,5 @@
 export const CHART_OPTIONS = {
-  borderColor: '#2151f5',
+  borderColor: '#4F7942',
   borderWidth: 2,
   animation: {
     duration: 0,
