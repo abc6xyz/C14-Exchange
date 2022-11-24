@@ -4,9 +4,9 @@ import {
   Pay,
   Rating,
   Partner,
-  ProtectedPages,
-  SignIn,
-  SignUp,
+  // ProtectedPages,
+  // SignIn,
+  // SignUp,
   Trade,
   Feedback
 } from './pages';
@@ -22,16 +22,14 @@ function App() {
   category: 'User',
   action: 'Joined the waitlist'
 });
-console.log("Oyee aagayaaa!");
-
   return (
     <div className='App'>
       <UserProvider>
         <Routes>
           <Route path='/' element={<Navigate to='/trade' />} />
-          <Route path='/signin' element={<SignIn />} />
+          {/* <Route path='/signin' element={<SignIn />} />
           <Route path='/signup' element={<SignUp />} />
-          <Route element={<ProtectedPages />}>
+          <Route element={<ProtectedPages />}> */}
             <Route path='/' element={<Dashboard />}>
               <Route path='assets' element={<Assets />} />
               <Route path='trade' element={<Trade />} />
@@ -43,7 +41,7 @@ console.log("Oyee aagayaaa!");
               
               <Route path='*' element={<Assets />} />
             </Route>
-          </Route>
+          {/* </Route> */}
         </Routes>
       </UserProvider>
     </div>
