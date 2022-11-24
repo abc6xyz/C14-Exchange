@@ -26,7 +26,7 @@ function App() {
     <div className='App'>
       <UserProvider>
         <Routes>
-          <Route path='/' element={<Navigate to='/trade' />} />
+          <Route path='/' element={<Navigate to='/assets' />} />
           {/* <Route path='/signin' element={<SignIn />} />
           <Route path='/signup' element={<SignUp />} />
           <Route element={<ProtectedPages />}> */}
