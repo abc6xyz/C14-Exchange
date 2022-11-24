@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { AuthError, AuthLayout, Button, SignInForm, Text } from '../components';
 import { useContext, useEffect } from 'react';
 

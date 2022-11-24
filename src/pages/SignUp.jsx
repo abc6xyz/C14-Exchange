@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { AuthError, AuthLayout, Button, SignUpForm, Text } from '../components';
 import { useContext, useEffect } from 'react';
 
 import { UserContext } from '../contexts/UserContext';

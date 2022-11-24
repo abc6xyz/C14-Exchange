@@ -12,8 +12,9 @@ import {
   TableRecentTransactions,
 } from '../components';
 import ReactApexChart from 'react-apexcharts';
-import {Text, Table} from '../components';
-
+import {Table} from '../components';
+import {CircleProgress} from 'react-gradient-progress'
+import useAssets from '../hooks/useAssets';
 import { AssetsContext } from '../contexts/AssetsContext';
 import useCombineSearchFilter from '../hooks/useCombineSearchFilter';
 import { useContext } from 'react';
@@ -321,7 +322,8 @@ const state = {
             },          
 };
 
-
+const x = useAssets().x;
+const str = "YAY! You've become " + x + "% Green by using C14."
 return (
     <>
       <ContentCenter>
@@ -351,6 +353,10 @@ return (
             )}
           </div>
           <TableAssets assets={assetsInTable} />
+        </Section>
+          <Section>
+            <SectionTitle title={str}/>
+            <center><CircleProgress percentage={x} strokeWidth={18} primaryColor = { [ '#29e6a7','#4F7942'] }/></center>
         </Section>
       </ContentCenter>
       <ContentRight>
