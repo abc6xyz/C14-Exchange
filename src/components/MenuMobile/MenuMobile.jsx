@@ -1,10 +1,12 @@
 import './MenuMobile.css';
 
 import { Button, SidebarNavItem } from '..';
-import { RiBankCardFill, RiCloseLine, RiPieChartFill } from 'react-icons/ri';
+import { RiCloseLine } from 'react-icons/ri';
 
-import { AiFillEuroCircle } from 'react-icons/ai';
+import { AiOutlineDollar } from 'react-icons/ai';
 import {GiGreenPower} from 'react-icons/gi';
+import {RiSendPlaneFill} from 'react-icons/ri';
+import {VscFeedback, VscPieChart} from 'react-icons/vsc';
 import { ModalContext } from '../../contexts/ModalContext';
 import { TiChartLine } from 'react-icons/ti';
 import useAuth from '../../hooks/useAuth';
@@ -26,14 +28,14 @@ const MenuMobile = () => {
               <SidebarNavItem
                 to='/assets'
                 text='Assets'
-                icon={<RiPieChartFill />}
+                icon={<VscPieChart />}
               />
               <SidebarNavItem to='/trade' text='Trade' icon={<TiChartLine />} />
-              <SidebarNavItem to='/pay' text='Pay' icon={<RiBankCardFill />} />
+              <SidebarNavItem to='/pay' text='Send/Receive' icon={<RiSendPlaneFill />} />
               <SidebarNavItem
                 to='/deposit'
                 text='Deposit'
-                icon={<AiFillEuroCircle />}
+                icon={<AiOutlineDollar />}
               />
               {/* <SidebarNavItem
                 to='/partners'
@@ -44,6 +46,11 @@ const MenuMobile = () => {
                 to='/rating'
                 text='Convert C14 to Offsets'
                 icon={<GiGreenPower />}
+              />
+              <SidebarNavItem
+                to='/feedback'
+                text='Feedback'
+                icon={<VscFeedback />}
               />
               
             </div>

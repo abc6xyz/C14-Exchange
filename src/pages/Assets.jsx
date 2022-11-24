@@ -1,3 +1,4 @@
+/* eslint-disable no-const-assign */
 import {
   ChartPortfolio,
   ContentCenter,
@@ -12,6 +13,8 @@ import {
 import { AssetsContext } from '../contexts/AssetsContext';
 import { useContext } from 'react';
 import useMediaQuery from '../hooks/useMediaQuery';
+import useAssets from '../hooks/useAssets';
+import {CircleProgress} from 'react-gradient-progress'
 
 const Assets = () => {
   const isWidthMin1150 = useMediaQuery('(min-width: 1150px)');
@@ -22,6 +25,8 @@ const Assets = () => {
   //   yourCoins[0].symbol = 'C14';
   //   yourCoins[0].icon = 'https://imgur.com/Cz7cT2x.png';
   // }
+  const x = useAssets().x;
+  const str = "You've become " + x + "% Green by using C14."
   return (
     <>
       <ContentCenter>
@@ -39,6 +44,10 @@ const Assets = () => {
       </ContentCenter>
       {isWidthMin1150 && (
         <ContentRight>
+          <Section>
+            <SectionTitle title={str}/>
+            <center><CircleProgress percentage={x} strokeWidth={18} primaryColor = { [ '#29e6a7','#4F7942'] }/></center>
+        </Section>
           <Section>
             <TabTrade />
           </Section>

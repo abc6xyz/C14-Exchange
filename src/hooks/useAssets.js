@@ -13,6 +13,7 @@ const useAssets = () => {
     .filter((asset) => asset.balance_coin > 0)
     .sort((prev, next) => next.balance_eur - prev.balance_eur);
 
+  var x = 1;
   if (yourCoins[0] !== undefined) {
     if (yourCoins[0].id === "Qwsogvtv82FCd") {
     yourCoins[0].name = 'C14 Token';
@@ -24,7 +25,8 @@ const useAssets = () => {
     yourCoins[1].icon = 'https://imgur.com/Cz7cT2x.png';
     
     }    
-  }
+     x = (yourCoins[0].balance_eur/250000 - 5).toFixed(2);
+  } 
   const coinsOnWatchlist = coins
     .filter((asset) => asset.onWatchlist)
     .sort((prev, next) => next.market_cap - prev.market_cap);
@@ -33,7 +35,7 @@ const useAssets = () => {
     (prev, next) => next.balance_eur - prev.balance_eur
   );
 
-  return { allCoins, yourCoins, coinsOnWatchlist, allFiat };
+  return { x, allCoins, yourCoins, coinsOnWatchlist, allFiat };
 };
 
 export default useAssets;
