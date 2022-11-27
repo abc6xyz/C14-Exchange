@@ -8,7 +8,8 @@ import {
   SignIn,
   SignUp,
   Trade,
-  Feedback
+  Feedback,
+  LearnMore
 } from './pages';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import ReactGA from 'react-ga';
@@ -41,6 +42,7 @@ function App() {
               <Route path='rating' element={<Rating />} />
               <Route path='partners' element={<Partner />} />
               <Route path='feedback' element={<Feedback />} />
+              <Route path='learn_more' element={<LearnMore />} />
               
               <Route path='*' element={<Assets />} />
             </Route>

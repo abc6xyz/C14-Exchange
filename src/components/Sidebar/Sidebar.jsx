@@ -6,6 +6,7 @@ import {VscFeedback, VscPieChart} from 'react-icons/vsc';
 import { AiOutlineDollar } from 'react-icons/ai';
 import {RiSendPlaneFill} from 'react-icons/ri';
 import { TiChartLine } from 'react-icons/ti';
+import {MdOutlineBookmarks} from 'react-icons/md';
 
 const Sidebar = () => {
   return (
@@ -34,6 +35,11 @@ const Sidebar = () => {
                 to='/feedback'
                 text='Feedback'
                 icon={<VscFeedback />}
+              />
+              <SidebarNavItem
+                to='/learn_more'
+                text='C14 Academy'
+                icon={<MdOutlineBookmarks />}
               />
               
       </div>

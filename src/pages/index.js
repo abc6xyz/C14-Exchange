@@ -8,4 +8,5 @@ import ProtectedPages from './ProtectedPages';
 import Partner from './Partner';
 import Rating from './Rating';
 import Feedback from './Feedback';
-export { SignIn, SignUp, Assets, Trade, Pay, Deposit, ProtectedPages, Partner, Rating, Feedback };
+import LearnMore from './LearnMore';
+export { SignIn, SignUp, Assets, Trade, Pay, Deposit, ProtectedPages, Partner, Rating, Feedback, LearnMore };

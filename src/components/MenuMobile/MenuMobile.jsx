@@ -6,6 +6,7 @@ import { RiCloseLine } from 'react-icons/ri';
 import { AiOutlineDollar } from 'react-icons/ai';
 import {GiGreenPower} from 'react-icons/gi';
 import {RiSendPlaneFill} from 'react-icons/ri';
+import {MdOutlineBookmarks} from 'react-icons/md';
 import {VscFeedback, VscPieChart} from 'react-icons/vsc';
 import { ModalContext } from '../../contexts/ModalContext';
 import { TiChartLine } from 'react-icons/ti';
@@ -51,6 +52,11 @@ const MenuMobile = () => {
                 to='/feedback'
                 text='Feedback'
                 icon={<VscFeedback />}
+              /> 
+              <SidebarNavItem
+                to='/learn_more'
+                text='C14 Academy'
+                icon={<MdOutlineBookmarks />}
               />
               
             </div>

@@ -26,7 +26,7 @@ const Pay = () => {
         <Section width={isWidthMax1150 ? 's' : ''}>
           <SectionTitle
             title='Send again'
-            subtitle='Easily send to a recent destination'
+            subtitle='Easily send to a recent destination.'
           />
           <TablePayments />
         </Section>

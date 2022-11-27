@@ -21,6 +21,7 @@ const Text = ({ children, h1, h2, h3, size, weight, color, uppercase }) => {
     'text-black': color === 'black',
     'text-white': color === 'white',
     'text-grey': color === 'grey',
+    'text-darkgrey': color === 'darkgrey',
     'text-blue': color === 'blue',
     'text-red': color === 'red',
     'text-green': color === 'green',

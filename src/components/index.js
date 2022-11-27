@@ -25,6 +25,7 @@ import ModalsManager from './ModalsManager/ModalsManager';
 import Search from './Inputs/Search';
 import Section from './Section/Section';
 import SectionTitle from './Section/SectionTitle';
+import SectionTitle2 from './Section/SectionTitle2'
 import Sidebar from './Sidebar/Sidebar';
 import SidebarNavItem from './Sidebar/SidebarNavItem';
 import SignInForm from './Auth/SignInForm';
@@ -83,6 +84,7 @@ export {
   ContentRight,
   Section,
   SectionTitle,
+  SectionTitle2,
   Button,
   Text,
   Table,
