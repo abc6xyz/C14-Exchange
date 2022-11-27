@@ -35,7 +35,7 @@ const Assets = () => {
         </Section>
         <Section>
           <SectionTitle title='Your Assets' />
-          <TableYourAssets assets={[yourCoins[0], yourCoins[1]]} />
+          <TableYourAssets assets={yourCoins} />
         </Section>
         <Section>
           <SectionTitle title='Watchlist' />
